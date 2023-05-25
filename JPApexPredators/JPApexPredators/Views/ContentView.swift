@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var apController: ApexPredatorController
+    let apController = ApexPredatorController()
     
     var body: some View {
         NavigationView {
@@ -27,7 +27,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(ApexPredatorController())
             .preferredColorScheme(.dark)
     }
 }

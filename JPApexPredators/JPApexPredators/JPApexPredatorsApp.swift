@@ -9,12 +9,9 @@ import SwiftUI
 
 @main
 struct JPApexPredatorsApp: App {
-    @StateObject private var apController = ApexPredatorController()
-    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(apController)
         }
     }
 }
