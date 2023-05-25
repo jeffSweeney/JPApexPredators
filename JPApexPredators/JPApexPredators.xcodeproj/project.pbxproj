@@ -96,10 +96,10 @@
 		E080389B2A1FC12700E7C00E /* JPApexPredators */ = {
 			isa = PBXGroup;
 			children = (
-				E080389C2A1FC12700E7C00E /* JPApexPredatorsApp.swift */,
 				E080389E2A1FC12700E7C00E /* ContentView.swift */,
-				E08038C62A1FC4F100E7C00E /* jpapexpredators.json */,
-				E08038A02A1FC12800E7C00E /* Assets.xcassets */,
+				E08038CA2A1FC9C200E7C00E /* Data */,
+				E08038C92A1FC9B900E7C00E /* Models */,
+				E08038C82A1FC99E00E7C00E /* MiscSetup */,
 				E08038A22A1FC12800E7C00E /* Preview Content */,
 			);
 			path = JPApexPredators;
@@ -128,6 +128,30 @@
 				E08038B92A1FC12800E7C00E /* JPApexPredatorsUITestsLaunchTests.swift */,
 			);
 			path = JPApexPredatorsUITests;
+			sourceTree = "<group>";
+		};
+		E08038C82A1FC99E00E7C00E /* MiscSetup */ = {
+			isa = PBXGroup;
+			children = (
+				E080389C2A1FC12700E7C00E /* JPApexPredatorsApp.swift */,
+				E08038A02A1FC12800E7C00E /* Assets.xcassets */,
+			);
+			name = MiscSetup;
+			sourceTree = "<group>";
+		};
+		E08038C92A1FC9B900E7C00E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E08038CA2A1FC9C200E7C00E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E08038C62A1FC4F100E7C00E /* jpapexpredators.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
