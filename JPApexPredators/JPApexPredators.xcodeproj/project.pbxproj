@@ -16,6 +16,7 @@
 		E08038BA2A1FC12800E7C00E /* JPApexPredatorsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08038B92A1FC12800E7C00E /* JPApexPredatorsUITestsLaunchTests.swift */; };
 		E08038C72A1FC4F100E7C00E /* jpapexpredators.json in Resources */ = {isa = PBXBuildFile; fileRef = E08038C62A1FC4F100E7C00E /* jpapexpredators.json */; };
 		E08038CC2A1FCE3C00E7C00E /* ApexPredator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08038CB2A1FCE3C00E7C00E /* ApexPredator.swift */; };
+		E08038CF2A1FD74800E7C00E /* ApexPredatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08038CE2A1FD74800E7C00E /* ApexPredatorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		E08038B92A1FC12800E7C00E /* JPApexPredatorsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPApexPredatorsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E08038C62A1FC4F100E7C00E /* jpapexpredators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jpapexpredators.json; sourceTree = "<group>"; };
 		E08038CB2A1FCE3C00E7C00E /* ApexPredator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredator.swift; sourceTree = "<group>"; };
+		E08038CE2A1FD74800E7C00E /* ApexPredatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredatorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 		E080389B2A1FC12700E7C00E /* JPApexPredators */ = {
 			isa = PBXGroup;
 			children = (
-				E080389E2A1FC12700E7C00E /* ContentView.swift */,
+				E08038D02A1FE4E600E7C00E /* Views */,
+				E08038CD2A1FD73300E7C00E /* ViewModels */,
 				E08038C92A1FC9B900E7C00E /* Models */,
 				E08038CA2A1FC9C200E7C00E /* Data */,
 				E08038C82A1FC99E00E7C00E /* MiscSetup */,
@@ -155,6 +158,22 @@
 				E08038C62A1FC4F100E7C00E /* jpapexpredators.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		E08038CD2A1FD73300E7C00E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E08038CE2A1FD74800E7C00E /* ApexPredatorController.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E08038D02A1FE4E600E7C00E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E080389E2A1FC12700E7C00E /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +309,7 @@
 			files = (
 				E08038CC2A1FCE3C00E7C00E /* ApexPredator.swift in Sources */,
 				E080389F2A1FC12700E7C00E /* ContentView.swift in Sources */,
+				E08038CF2A1FD74800E7C00E /* ApexPredatorController.swift in Sources */,
 				E080389D2A1FC12700E7C00E /* JPApexPredatorsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
