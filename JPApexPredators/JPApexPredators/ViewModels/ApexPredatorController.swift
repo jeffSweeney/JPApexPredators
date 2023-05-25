@@ -7,8 +7,8 @@
 
 import Foundation
 
-class ApexPredatorController {
-    var apexPredators: [ApexPredator] = []
+class ApexPredatorController: ObservableObject {
+    @Published var apexPredators: [ApexPredator] = []
     
     init() {
         // Populate our apex predators
