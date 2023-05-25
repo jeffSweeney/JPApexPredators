@@ -11,7 +11,7 @@ class ApexPredatorController {
     var apexPredators: [ApexPredator] = []
     
     init() {
-        // Populte our apex predators
+        // Populate our apex predators
         decodeApexPredators()
     }
 }
