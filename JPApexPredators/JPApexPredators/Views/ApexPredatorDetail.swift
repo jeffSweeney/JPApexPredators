@@ -50,7 +50,7 @@ struct ApexPredatorDetail: View {
                         .font(.title)
                         .padding(.bottom, 5)
                     
-                    ForEach(predator.movieScenes, id: \.self.id) { movieScene in
+                    ForEach(predator.movieScenes) { movieScene in
                         Text(movieScene.movie)
                             .font(.title3)
                             .padding(.bottom, 2.5)
