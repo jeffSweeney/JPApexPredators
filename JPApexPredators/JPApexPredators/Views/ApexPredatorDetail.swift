@@ -59,6 +59,10 @@ struct ApexPredatorDetail: View {
                             .font(.subheadline)
                             .padding(.bottom, 10)
                     }
+                    
+                    Link("Read More", destination: URL(string: predator.link)!)
+                        .foregroundColor(.blue)
+                        .padding(.bottom)
                 }
                 .padding()
             }
