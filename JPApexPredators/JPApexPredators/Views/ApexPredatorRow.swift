@@ -8,14 +8,44 @@
 import SwiftUI
 
 struct ApexPredatorRow: View {
+    @State var predator: ApexPredator
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            predator.image
+                .resizable()
+                .scaledToFit()
+                .frame(width: 75, height: 75)
+                .shadow(color: .white, radius: 1.5, x: 0, y: 0)
+            
+            VStack(alignment: .leading) {
+                Text(predator.name)
+                    .font(.headline)
+                
+                Text(predator.type.capitalized)
+                    .font(.subheadline)
+                    .padding(.vertical, 5)
+                    .padding(.horizontal, 10)
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(.brown.opacity(0.67))
+                    )
+            }
+            .fontWeight(.bold)
+            .padding()
+            
+            Spacer()
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: 100)
     }
 }
 
 struct ApexPredatorRow_Previews: PreviewProvider {
     static var previews: some View {
-        ApexPredatorRow()
+        let controller = ApexPredatorController()
+        ApexPredatorRow(predator: controller.apexPredators.first!)
             .preferredColorScheme(.dark)
+            .previewLayout(.sizeThatFits)
     }
 }
