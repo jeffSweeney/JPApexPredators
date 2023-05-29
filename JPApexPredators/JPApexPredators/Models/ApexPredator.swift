@@ -26,6 +26,12 @@ struct ApexPredator: Codable, Identifiable {
         return Image(imageName)
     }
     
+    var backgroundImage: Image {
+        let lowercasedType = type.lowercased()
+        // Image assets for background image correspond to lowercased type name
+        return Image(lowercasedType)
+    }
+    
     var backgroundColor: Color {
         switch type.lowercased() {
         case "land":
@@ -41,7 +47,7 @@ struct ApexPredator: Codable, Identifiable {
     }
 }
 
-struct MovieScene: Codable {
+struct MovieScene: Codable, Identifiable {
     let id: Int
     let movie: String
     let sceneDescription: String
