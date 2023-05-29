@@ -19,7 +19,7 @@ struct ApexPredatorRow: View {
                 .shadow(color: .white, radius: 1.5, x: 0, y: 0)
             
             VStack(alignment: .leading) {
-                Text(predator.name)
+                Text(predator.name.capitalized)
                     .font(.headline)
                 
                 Text(predator.type.capitalized)
@@ -28,7 +28,7 @@ struct ApexPredatorRow: View {
                     .padding(.horizontal, 10)
                     .background(
                         RoundedRectangle(cornerRadius: 20)
-                            .fill(.brown.opacity(0.67))
+                            .fill(predator.backgroundColor.opacity(0.67))
                     )
             }
             .fontWeight(.bold)

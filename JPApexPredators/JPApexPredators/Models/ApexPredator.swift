@@ -25,6 +25,20 @@ struct ApexPredator: Codable, Identifiable {
         let imageName = name.lowercased().replacingOccurrences(of: " ", with: "")
         return Image(imageName)
     }
+    
+    var backgroundColor: Color {
+        switch type.lowercased() {
+        case "land":
+            return .brown
+        case "sea":
+            return .blue
+        case "air":
+            return .teal
+        default:
+            assertionFailure("Unexpected 'type': \(type)")
+            return .white
+        }
+    }
 }
 
 struct MovieScene: Codable {
