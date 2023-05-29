@@ -28,6 +28,7 @@ extension ApexPredatorController {
             let data = try Data(contentsOf: url)
             let decode = JSONDecoder()
             apexPredators = try decode.decode([ApexPredator].self, from: data)
+            apexPredators.shuffle() // Data is dominated by land in the beginning of the list. Shuffle to get more randomness.
         } catch {
             assertionFailure("Error decoding JSON data: \(error)")
         }
