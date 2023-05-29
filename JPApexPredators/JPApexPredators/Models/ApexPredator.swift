@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ApexPredator: Codable, Identifiable {
     let id: Int
@@ -18,6 +19,11 @@ struct ApexPredator: Codable, Identifiable {
     enum CodingKeys: String, CodingKey {
         case id, name, type, movies, link
         case movieScenes = "movie_scenes"
+    }
+    
+    var image: Image {
+        let imageName = name.lowercased().replacingOccurrences(of: " ", with: "")
+        return Image(imageName)
     }
 }
 
